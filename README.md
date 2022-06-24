@@ -2,7 +2,7 @@
 - src: tsファイル
 - dist: 変換後のjsファイル
 - tsconfig.json: 変換時のルールを定める
-- .eslitrc.json: eslintとprettierの設定
+- .eslitrc.json: eslintの設定
 - gulpfile.js: gulpの設定
 
 # コンパイル方法
@@ -12,24 +12,30 @@ tsc hoge.ts
 ```
 
 ## gulpを利用したコンパイル
+```
+gulp
+```
+
 - デフォルトで設定をしてあるので、`gulp` でOK。
 - tsconfig.jsonを読み込んで、gulpを実行している
 - こっちを使えばeslintが機能する
 
+# 環境構築
+(1) gulpをグローバルにインストールする。インストール済みなら不要
 
-# install
-以下で、typescriptの環境をinstall
+```
+$ npm install -g gulp-cli
+$ gulp --version
+```
 
-グローバルにインストール
+(2) コマンドラインから実行したいなら、typescriptをグローバルにインストール
 ```
 $ npm install -g typescript # インストールしていないなら実行
 $ tsc --version
 ```
 
-その他、こちらを実行
+(3) 各種ライブラリのインストール
 ```
-$ npm install -g gulp-cli # インストールしていないなら実行
-$ gulp --version
 $ npm install
 ```
 
