@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "removeComments": true, // 出力時にコメントを削除する
+        "target": "es5", // es5として出力
+        "strict": true
+    }
+}
